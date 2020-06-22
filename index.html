@@ -3,19 +3,15 @@
    <head> 
       <title>JavaScript Calculator</title>
    </head> 
-   <script src="app.js"></script>
    
    <body> 
       <div class = title >JavaScript Calculator</div> 
       <table border="1"> 
          <tr> 
             <td colspan="3"><input id="calc_screen" type="text" id="result" value="0"/></td> 
-            <!-- clr() function will call clr to clear all value -->
             <td><input type="button" value="c" onclick="clearScreen()"/> </td> 
          </tr> 
          <tr> 
-            <!-- create button and assign value to each button -->
-            <!-- dis("1") will call function dis to display value -->
             <td><input type="button" value="1" onclick="display('1')"/> </td> 
             <td><input type="button" value="2" onclick="display('2')"/> </td> 
             <td><input type="button" value="3" onclick="display('3')"/> </td> 
@@ -36,10 +32,10 @@
          <tr> 
             <td><input type="button" value="." onclick="display('.')"/> </td> 
             <td><input type="button" value="0" onclick="display('0')"/> </td> 
-            <!-- solve function call function solve to evaluate value -->
             <td><input type="button" value="=" onclick="solve()"/> </td> 
             <td><input type="button" value="*" onclick="display(' * ')"/> </td> 
          </tr> 
       </table> 
-   </body> 
+   </body>
+   <script src="app.js"></script> 
 </html> 
