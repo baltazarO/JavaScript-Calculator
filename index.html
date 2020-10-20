@@ -6,17 +6,17 @@
    </head> 
    
    <body> 
-      <h2>JavaScript Calculator</h2> 
-      <table border="1" id="calculator"> 
+      <h2>Calculator</h2> 
+      <table id="calculator"> 
          <tr> 
             <td colspan="3"><input id="calc_screen" type="text" id="result" value="0"/></td> 
-            <td><input type="button" value="c" onclick="clearScreen()"/> </td> 
+            <td><input type="button" value="/" onclick="display(' / ')" /> </td> 
          </tr> 
          <tr> 
             <td><input type="button" value="1" onclick="display('1')"/> </td> 
             <td><input type="button" value="2" onclick="display('2')"/> </td> 
             <td><input type="button" value="3" onclick="display('3')"/> </td> 
-            <td><input type="button" value="/" onclick="display(' / ')" /> </td> 
+            <td><input type="button" value="*" onclick="display(' * ')"/> </td> 
          </tr> 
          <tr> 
             <td><input type="button" value="4" onclick="display('4')"/> </td> 
@@ -33,10 +33,15 @@
          <tr> 
             <td><input type="button" value="." onclick="display('.')"/> </td> 
             <td><input type="button" value="0" onclick="display('0')"/> </td> 
+            <td><input type="button" value="c" onclick="clearScreen()"/> </td> 
             <td><input type="button" value="=" onclick="solve()"/> </td> 
-            <td><input type="button" value="*" onclick="display(' * ')"/> </td> 
          </tr> 
       </table> 
+
+      <h2>Technologies Used</h2>
+      <p>Calculator made using HTML, CSS, and Javascript. No JQuery, Bootstrap, etc. so I can debug
+         the code easier. There is no backend. I am showing an example of front end functionability only.         
+      </p>
    </body>
    <script src="app.js"></script> 
 </html> 
