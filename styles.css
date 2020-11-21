@@ -1,8 +1,74 @@
-#calculator {
-    margin-left:auto; 
-    margin-right:auto;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+.container {}
+
+h1 {
     text-align: center;
+    margin: 0;
+}
+
+.calculator {
+    width: 23%;
+    margin: 0 auto;
+    background-color: lightgray;
+}
+
+#screenArea {
+    height: 50px;
+    padding-top: 23px;
+}
+
+#screen {
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    width: 77%;
+    height: 100%;
+    display: block;
+}
+
+.names>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.texas {
+    padding: 18px 0 0 18px;
+    font-size: 17px;
+}
+
+.calcName {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 8px;
+    line-height: 28px;
+}
+
+.panel {
+    height: 45px;
+    width: 157px;
+    margin-left: 18px;
+}
+
+.sun {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+    outline: 1px solid black;
+}
+
+/* .sun:not(:first-child) {
+    border-left: 1px solid black;
+} */
+
+.press {
+    display: inline-block;
+    width: 64px;
+    height: 44px;
+    background-color: red;
 }
