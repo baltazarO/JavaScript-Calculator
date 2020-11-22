@@ -1,18 +1,115 @@
-#calculator {
-    margin-left:auto; 
-    margin-right:auto;
-    min-width: 30%;
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+h1 {
     text-align: center;
+    margin: 0;
 }
 
-td { 
-    height: 30px; 
+.calculator {
+    width: 384px;
+    margin: 0 auto;
+    background-color: lightgray;
+    border-radius: 5px 5px 35px 35px;
 }
 
-input {
-    width: 100%;
+#screenArea {
+    height: 50px;
+    padding-top: 23px;
+}
+
+#screen {
+    margin: 0 auto;
+    border: none;
+    padding: 0;
+    width: 77%;
     height: 100%;
+    display: block;
+}
+
+.names>div {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.texas {
+    padding: 18px 0 0 24px;
+    font-size: 17px;
+}
+
+.calcName {
+    font-size: 36px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 8px;
+    line-height: 28px;
+}
+
+.panel {
+    height: 45px;
+    width: 157px;
+    margin-left: 18px;
+}
+
+.sun {
+    float: left;
+    width: 25%;
+    height: 100%;
+    background-color: gray;
+    outline: 1px solid black;
+}
+
+.press {
+    display: inline-block;
+    width: 64px;
+    height: 44px;
+    background-color: red;
+    color: #FFF;
+    border-radius: 5px;
+}
+
+.equals {
+    height: 101px;
+}
+
+.most {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.less {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.mainPanel {
+    margin-top: 10px;
+    border-top: 2px solid black;
+    padding: 13px 13px 45px;
+}
+
+.buttons {
+    border: 2px solid black;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+
+.row {
+    margin-top: 13px;
+}
+
+.most .press {
+    margin-right: 10px;
+}
+
+.most .row:first-child {
+    margin: 0;
+}
+
+.less .row:first-child {
+    margin: 0;
 }
