@@ -11,7 +11,7 @@ h1 {
 .calculator {
     width: 384px;
     margin: 0 auto;
-    background-color: lightgray;
+    background-color: #0E4D92;
     border-radius: 5px 5px 35px 35px;
 }
 
@@ -27,11 +27,15 @@ h1 {
     width: 77%;
     height: 100%;
     display: block;
+    font-size: 48px;
+    font-style: italic;
+    text-align: right;
 }
 
 .names>div {
     display: inline-block;
     vertical-align: top;
+    color: white;
 }
 
 .texas {
@@ -65,9 +69,12 @@ h1 {
     display: inline-block;
     width: 64px;
     height: 44px;
-    background-color: red;
+    background-color: #BF0A30;
     color: #FFF;
     border-radius: 5px;
+    font-size: 16px;
+    border: 2px solid black;
+    text-align: left;
 }
 
 .equals {
@@ -112,4 +119,9 @@ h1 {
 
 .less .row:first-child {
     margin: 0;
+}
+
+.numeric {
+    color: #0E4D92;
+    background-color: white;
 }
