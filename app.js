@@ -4,6 +4,28 @@ var mathOperation = null;
 var second = null;
 var recentlyOperate = false;
 
+//choose operation
+function chooseOperation(mathOperation, first, second) {
+    switch (mathOperation) {
+        case "+":
+            return(first + second);
+        case "/":
+            return(first / second);
+        case "-":
+            return(first - second);
+        case "√":
+            return(first + second);
+        case "%":
+            return(first + second);
+        case "×":
+            return(first * second);
+        case "+/-":
+            return(first + second);
+        default:
+            return(-1);
+    }
+}
+
 // change value of screen solving
 function showAnswer(number) {
     $('#screen').val(number);
@@ -34,30 +56,14 @@ $(".operation").not(".equals").click(function () {
 $(".equals").click(function () {
     if (first === "" || !mathOperation) return;
     if (mathOperation) second = $('#screen').val();
-    //make first and second Number()
-    switch (mathOperation) {
-        case "+":
-            showAnswer(first + second);
-            break;
-        case "/":
-            showAnswer(first / second);
-            break;
-        case "-":
-            showAnswer(first - second);
-            break;
-        case "√":
-            showAnswer(first + second);
-            break;
-        case "%":
-            showAnswer(first + second);
-            break;
-        case "×":
-            showAnswer(first * second);
-            break;
-        case "+/-":
-            showAnswer(first + second);
-            break;
-        default:
-            break;
-    }
+
+    first = Number(first);
+    second = Number(second);
+    var temp = chooseOperation(mathOperation,first,second);
+    showAnswer(temp);
+    
+    first = temp;
+    second = null;
+    mathOperation = null;
+    recentlyOperate = false;
 });
